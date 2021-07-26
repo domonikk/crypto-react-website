@@ -1,7 +1,14 @@
-import React, {useState} from 'react' 
-import Sidebar from '../components/Sidebar' 
-import Navbar from '../components/Navbar' 
-import HeroSection from '../components/HeroSection'
+import React, {useState} from 'react' ;
+import Sidebar from '../components/Sidebar' ;
+import Navbar from '../components/Navbar' ;
+import HeroSection from '../components/HeroSection';  
+import InfoSection from '../components/InfoSection/index';
+import { homeObjOne } from '../components/InfoSection/Data';
+ 
+
+
+
+
 
 const Home = () => {  
     //function to open and close toggle for mobile view
@@ -15,12 +22,14 @@ const Home = () => {
 
     return(
        <>  
-          <Sidebar isOpen={isOpen} toggle={toggle}/> 
-          <Navbar toggle={toggle}
-          /> 
-          <HeroSection/>
+          <Sidebar isOpen={isOpen} toggle={toggle}/>  
+          <Navbar toggle={toggle}/>  
+          <HeroSection/>    
+          <InfoSection  {...homeObjOne}/>                             
+          
+                
        </>
-    )
-}
+    );
+};
 
-export default Home
+export default Home;

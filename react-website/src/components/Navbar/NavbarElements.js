@@ -17,7 +17,7 @@ export const Nav = styled.nav`
    z-index:10; 
 
 
-   @media screen and (max-width:960px){
+   @media screen and (max-width:768px){
        transition: 0.8s all ease;
    } 
 `  
@@ -29,7 +29,8 @@ export const NavbarContainer = styled.div`
   z-index: 1; 
   width: 100%; 
   padding: 0 24px; 
-  max-width: 1100px; 
+  max-width: 1100px;  
+  font-family: 'Encode Sans', sans-serif; 
   
 `  
 
@@ -43,7 +44,8 @@ export const NavLogo = styled(LinkR)`
   margin-left: 50px;  
   margin-top: 30px;
   font-weight:bold; 
-  text-decoration:none;
+  text-decoration:none; 
+  font-family: 'Encode Sans', sans-serif; 
 `; 
 
 export const MobileIcon= styled.div` 
@@ -86,7 +88,8 @@ export const NavLinks = styled(LinkScroll)`
    text-decoration: none; 
    padding: 0 1rem;
    height: 100%; 
-   cursor: pointer;  
+   cursor: pointer;   
+   font-family: 'Encode Sans', sans-serif; 
    
 
    &.active{
@@ -115,7 +118,8 @@ export const NavBtnLink = styled(LinkR)`
    border: none; 
    cursor: pointer;  
    transition: all 0.2s ease-in-out; 
-   text-decoration: none;  
+   text-decoration: none;   
+   font-family: 'Encode Sans', sans-serif; 
 
    &:hover{
        transition: all 0.2s ease-in-out; 

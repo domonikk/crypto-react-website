@@ -28,7 +28,7 @@ const Sidebar = ({ isOpen, toggle}) => {
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>
-    )
-}
+    );
+};
 
 export default Sidebar
