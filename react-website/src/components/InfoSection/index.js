@@ -12,7 +12,7 @@ BtnWrap,
 Column2, 
 Img, 
 ImgWrap
-} from './InfoElements.js'; 
+} from '../InfoSection/InfoElements.js'; 
 import { Button} from '../ButtonElement.js';
 
 const InfoSection = ({lightBg,lightText,id,imgStart,topLine,headline,darkText,description,primary,dark,buttonLabel,img,alt}) => {

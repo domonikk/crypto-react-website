@@ -3,22 +3,22 @@ import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkScroll} from 'react-scroll'
 
 export const Nav = styled.nav`  
-   background: #000; 
+   background:#000;
    margin-top:-10px; 
    margin-left: -10px; 
-   margin-right: -8px;
+   margin-right: -8px; 
    height: 90px; 
    display: flex; 
    jutify-contetnt: center; 
    align-items: center; 
    font-size: 1rem; 
-   position: stsicky; 
+   position: sticky; 
    top:0; 
    z-index:10; 
 
 
    @media screen and (max-width:768px){
-       transition: 0.8s all ease;
+       transition: 0.8s all ease; 
    } 
 `  
 
@@ -92,10 +92,10 @@ export const NavLinks = styled(LinkScroll)`
    font-family: 'Encode Sans', sans-serif; 
    
 
-   &.active{
-       border-bottom: 3px solid #01bf71; 
-   }
-` ;
+    &.active{
+        border-bottom: 3px solid #01bf71;
+    }
+` 
 
 export const NavBtn = styled.nav`
    display: flex; 

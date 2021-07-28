@@ -3,16 +3,16 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div` 
   color: #fff;  
-  width:100.3%;  
-  left:-5px;
-  
-  position: absolute;
+  width:101.4%;  
+  margin-left:-10px; 
+  margin-right:-20px;
   background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};  
    
 
-  @media screen and (max-width:768px){
-      padding: 100px;
+  @media screen and (max-width: 768px){
+      padding: 100px 0;
   }
+ 
 ` 
 
 export const InfoWrapper =  styled.div` 
@@ -33,8 +33,8 @@ export const InfoRow = styled.div`
   align-items: center; 
   grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)}; 
 
-  @media screen and (max-width:768px){
-      grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+  @media screen and (max-width: 768px){
+      grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1'  'col2 col2'`)};
   }
 ` 
 
@@ -58,7 +58,7 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.p` 
-   color:#01bf71; 
+   color: #01bf71; 
    font-size: 16px; 
    line-height: 16px; 
    font-weight: 700; 
