@@ -3,14 +3,22 @@ import {MdKeyboardArrowRight, MdArrowForward} from 'react-icons/md'
 import '../../App.css'
 
 export const HeroContainer = styled.div`  
-  background:#0c0c0c; 
+  background: #0c0c0c; 
   display: flex; 
   justify-content: center; 
   align-items: center; 
-  padding: 0 30px;
   height: 800px; 
   position: relative; 
   z-index:1;   
+  width:100%;   
+
+  
+  @media screen and (max-width: 768px){
+     width: 101.2%;
+    
+  }
+
+
 
   
   
@@ -19,14 +27,15 @@ export const HeroContainer = styled.div`
 export const HeroBg = styled.div` 
   position: absolute; 
   top:0; 
-  right:0;
-  bottom:0;
-  left:-10px; 
-  width:101.4%; 
+  bottom:0; 
+  width:101.3%;
   height:100%; 
   overflow: hidden;   
- 
-  
+
+  @media screen and (max-width: 768px){
+    margin-left:-7px;
+    
+  }
 ` 
 
 export const VideoBg = styled.video`
@@ -38,15 +47,15 @@ export const VideoBg = styled.video`
 
  ::before {
     content:''; 
-    position: absolute; 
+    position:absolute; 
     top:0;
     left:0; 
     right:0; 
     bottom:0; 
     background:liner-gradient(180deg, rgba(0,0,0,0.2)0%, rgba(0,0,0,0.6) 100%), 
     linear-gradient(180deg, rgba(0,0,0,0.2) 0%, transparent 100%); 
-    z-index:2;
- } 
+    z-index:2;  
+  } 
  
 
 ` 
