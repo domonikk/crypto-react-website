@@ -1,9 +1,9 @@
 import React, {useState} from 'react'  
-import Video from '../../video/video.mp4'
+import Video from '../../images/crypto-bg.jpeg'
 import {
 HeroContainer,   
 HeroBg, 
-VideoBg,
+ImageBg,
 HeroH1, 
 HeroP, 
 HeroContent,
@@ -25,7 +25,7 @@ const HeroSection = () => {
     return (
         <HeroContainer> 
             <HeroBg>
-                <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
+                <ImageBg autoPlay loop muted src={Video} type='jpeg'/>
             </HeroBg> 
             <HeroContent> 
                 <HeroH1>Virtual Banking Made Easy</HeroH1>  
